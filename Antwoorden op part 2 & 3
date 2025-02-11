@@ -1,0 +1,28 @@
+Part 2:
+
+Vraag 5: Weerstation met de hoogste temperatuur:
+Station: Meetstation Arcen
+Temperatuur: 5.5°C
+Tijdstip: 2025-02-11 16:40:21
+
+Vraag 6: Gemiddelde temperatuur:
+Gemiddelde temperatuur: 3.04°C
+
+Vraag 7: Grootste verschil tussen gevoelstemperatuur en temperatuur:
+Station: Meetstation Zeeplatform F-3
+Temperatuurverschil: 7.0°C
+
+Vraag 8: Weerstation in de Noordzee:
+Station: Meetstation Zeeplatform F-3
+Regio: Noordzee
+
+Part 3:
+
+Ik heb voor het gemak een flowchart gemaakt zodat we dit proves het best kunnen visualiseren
+Ik begin het proces begint met het starten van het script, waarna er een verzoek wordt gestuurd naar de API om de nieuwste weergegevens op te halen
+Vervolgens wordt de opgehaalde data gecheckt en omgezet, zodat deze correct in de database kan worden opgeslagen
+Nadat de data succesvol is toegevoegd, wacht het script twintig minuten voordat het opnieuw een verzoek naar de API stuurt
+Voordat de verzoek word gestuurd, word er gekeken of de condition holds en dus of de 24 uur (1 dag) voorbij zijn
+Als de tijd nog niet voorbij is, start de cyclus opnieuw
+Zodra de vierentwintig uur zijn bereikt, stopt het script automatisch
+Dit zorgt voor een automatiserend proces
